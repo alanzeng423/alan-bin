@@ -101,7 +101,6 @@ async function getRaw(filePath: string, env: Env): Promise<string | null> {
 
 function listDir(index: BinIndex, dirPath: string): FileEntry[] {
   const prefix = dirPath ? dirPath + "/" : "";
-  const depth = dirPath ? dirPath.split("/").length : 0;
   const seen = new Set<string>();
   const result: FileEntry[] = [];
 
@@ -111,7 +110,8 @@ function listDir(index: BinIndex, dirPath: string): FileEntry[] {
     const seg = rel.split("/")[0];
     if (seen.has(seg)) continue;
     seen.add(seg);
-    const isDir = rel.includes("/");
+    const isDirectEntry = !rel.includes("/");
+    const isDir = isDirectEntry ? e.type === "dir" : true;
     result.push({
       name: seg,
       path: prefix + seg,
