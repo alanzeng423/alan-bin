@@ -1,9 +1,9 @@
 name = "alan-bin"
 main = "src/index.ts"
-compatibility_date = "2025-04-01"
+compatibility_date = "2025-08-25"
+compatibility_flags = ["nodejs_compat"]
 
 account_id = "f15741cdd7efe307679ea99df9da5582"
-
 workers_dev = true
 
 [[kv_namespaces]]
@@ -16,5 +16,6 @@ GITHUB_BRANCH = "main"
 FILES_PATH = "files"
 
 [[routes]]
-pattern = "bin.alanzeng.com/*"
+pattern = "bin.alanzeng.com"
+custom_domain = true
 zone_name = "alanzeng.com"

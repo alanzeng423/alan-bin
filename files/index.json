@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-08-25T12:00:00Z",
+  "files": [
+    { "name": "cs2", "path": "cs2", "type": "dir" },
+    { "name": "cs2/cfg", "path": "cs2/cfg", "type": "dir" },
+    { "name": "cs2/cfg/README.md", "path": "cs2/cfg/README.md", "type": "file", "size": 999 },
+    { "name": "cs2/cfg/autoexec.cfg", "path": "cs2/cfg/autoexec.cfg", "type": "file", "size": 3260 }
+  ]
+}
