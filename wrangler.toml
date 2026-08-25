@@ -1,0 +1,20 @@
+name = "alan-bin"
+main = "src/index.ts"
+compatibility_date = "2025-04-01"
+
+account_id = "f15741cdd7efe307679ea99df9da5582"
+
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "BIN_CACHE"
+id = "80f020e0da63441ca21573899561afa3"
+
+[vars]
+GITHUB_REPO = "alanzeng423/alan-bin"
+GITHUB_BRANCH = "main"
+FILES_PATH = "files"
+
+[[routes]]
+pattern = "bin.alanzeng.com/*"
+zone_name = "alanzeng.com"
